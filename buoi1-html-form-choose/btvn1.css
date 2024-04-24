@@ -1,0 +1,15 @@
+body{
+    width: 700px;
+    margin: 0px auto;
+}
+.tieude{
+    font-size: 27px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.doan1{
+    color: gray;
+}

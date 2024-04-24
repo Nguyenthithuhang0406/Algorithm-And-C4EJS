@@ -1,0 +1,40 @@
+
+.content{
+    width: 820px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 200px 600px;
+    grid-template-rows: 70px 210px 70px;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    position: relative;
+}
+.item1{
+    grid-column: 1 / span 2;
+    background-color: gold;
+    text-align: center;
+}
+.item2{
+background-color: aqua;
+text-align: center;
+}
+.item3{
+    background-color: green;
+    text-align: center;
+}
+.item4{
+    grid-column: 1 / span 2;
+    background-color: chocolate;
+    text-align: center;
+}
+.qctrai{
+    position: absolute;
+    width: 300px;
+    margin-right: 0px;
+    margin-top: -390px;
+}
+.qcphai{
+    width: 300px;
+    margin-left: 1200px;
+    margin-top: -390px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ban hoa online</title>
+    <link rel="stylesheet" href="./banhoa.css"/>
+    <script src="./banhoa.js" defer></script>
+    <script src="./cart.js" defer></script>
+    <script src="./viewCart.js"></script>
+    <style>
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        tr{
+            height: 30px;
+        }
+        td, th{
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header id="header">
+            <!-- <p>
+                "Giỏ hàng: "
+                <span id="product-number">0</span>
+                <button onclick="goToCartView()">Xem giỏ hàng</button>
+            </p> -->
+        </header>
+        <article id="list-container">
+            <button style="height: 40px;" onclick="back()">Quay lại</button>
+            <table id="table-data">
+                <tr>
+                    <th>STT</th>
+                    <th>Tên Sản phẩm</th>
+                    <th>Ảnh</th>
+                    <th>Giá</th>
+                </tr>
+
+            </table>
+        </article>
+        <aside>
+            <ul>
+                <li>Sidebar</li>
+            </ul>
+        </aside>
+        <footer>Footer</footer>
+    </div>
+</body>
+
+</html>

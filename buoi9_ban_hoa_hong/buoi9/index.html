@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .time {
+            background-color: yellow;
+        }
+    </style>
+    <script src="./app.js"></script>
+</head>
+
+<body>
+    Index of java script flow control !
+    <p id="content">
+
+    </p>
+    <h1 id="current_time">
+    </h1>
+    <h4>
+        Ten sp: Combo hoa qua ngot
+        <br>
+        Gia: 200.000d
+        <br>
+        Mo ta: Hoa qua sach
+    </h4>
+    <button onclick="addProductToCart()">Them vao gio hang</button>
+    <h4>Thong tin don hang <span style="width: 20px;height: 20px;border-radius: 50px;background-color: red;display: none;text-align: center;" id="cart_length"></span></h4>
+    <div id="product_info">
+    
+
+    </div>
+    <footer>
+
+    </footer>
+</body>
+
+<script>
+    let current_time = new Date().toUTCString();
+    let current_time_str = `Today is ${current_time}`
+
+    // Define dom
+    const dom = document;
+    console.log(document);
+
+    // Get Element from UI
+    let e1 = dom.getElementById("current_time");
+    console.log(e1);
+
+    // Set value for Element
+    e1.innerHTML = current_time_str
+
+    //e1.className="time italic"
+    // Set css for element
+    e1.classList = "time italic";
+
+    // Create child element
+    let e2 = dom.createElement("a")
+    e2.innerHTML = "Facebook"
+    e2.target = "_blank"
+    e2.href = "https://www.facebook.com"
+
+    // Insert to UI
+    let contentElement = dom.getElementById("content")
+    contentElement.appendChild(e2)
+
+    // Logic to buy a product
+    cart = [];
+    let product = {
+        name: "Combo hoa qua ngot",
+        price: "200.000",
+        des: "Hoa qua sach"
+    }
+
+    // Event
+    function addProductToCart(e) {
+        if(cart.length >= 2){
+            console.log("abcdcdc");
+            alert("So luong hang khong du trong kho")
+            addNoteToUI();
+            return
+        }
+        console.log(cart);
+        console.log("buying");
+        cart.push(product);
+        console.log(cart);
+        addCartToUI(cart)
+
+    }
+
+    // Add product list to UI
+    function addCartToUI(cart) {
+        let e1 = dom.getElementById("product_info")
+        cart.forEach(product => {
+            
+        });
+        let e2 = dom.createElement("div")
+            e2.innerHTML = `
+        <br>
+        ---------------
+        Ten sp: ${product.name}
+        <br>
+        Gia: ${product.price}
+        <br>
+        Mo ta: ${product.des}
+        ---------------
+        <br>
+        `
+
+        e1.appendChild(e2)
+        addProductNumberToUI(cart.length)
+    }
+
+    function addProductNumberToUI(p_number) {
+        let e1 = dom.getElementById("cart_length")
+        e1.style.display = "inline-block"
+        e1.innerHTML = p_number;
+    }
+
+    function addNoteToUI(){
+        let e1 = dom.createElement("input")
+        e1.placeholder = "Ghi chu"
+        e1.addEventListener("change", function(e){
+            console.log(e);
+            console.log(e.target.value);
+            let customer_note = e.target.value
+            alert(`
+                Don hang cua ban la
+                ${cart.toString()}
+                <br>
+                Ghi chu: ${customer_note}
+            `)
+        })
+
+        let e2 = dom.getElementsByTagName("footer");
+        console.log(e2);
+        e2[0].appendChild(e1)
+    }
+
+</script>
+
+</html>

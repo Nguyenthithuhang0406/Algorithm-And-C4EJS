@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+
+  <style>
+    body {text-align: center}
+    
+    #colorDisplay {
+       width: 300px;
+      height: 300px;
+      border: none;
+      margin: 20px auto;
+    }
+    #copyButton {
+      margin-top: 10px;
+      padding: 5px 10px;
+      color:black;
+      border:black
+      cursor: pointer;
+    }
+  </style>
+  
+</head>
+
+
+<body>
+ <div id="colorDisplay"></div>
+  <button onclick="pickRandomColor()">Xin hãy chọn mã Màu Ngẫu Nhiên</button>
+  <button onclick="copyColorCode()" id="copyButton" disabled>Copy Mã Màu</button>
+
+</body>
+  
+  <script>
+    function pickRandomColor() {
+      var randomColor = getRandomColor();
+      document.getElementById("colorDisplay").style.backgroundColor = randomColor;
+      document.getElementById("copyButton").disabled = false;
+      document.getElementById("copyButton").innerText = "Copy " + randomColor;
+    }
+
+    function getRandomColor() {
+      var letters = "0123456789ABCDEF";
+      var color = "#";
+      for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    function copyColorCode() {
+      var colorCode = document.getElementById("colorDisplay").style.backgroundColor;
+      var dummyInput = document.createElement("input");
+      document.body.appendChild(dummyInput);
+      dummyInput.value = colorCode;
+      dummyInput.select();
+      document.execCommand("copy");
+      document.body.removeChild(dummyInput);
+      alert("Đã copy mã màu: " + colorCode);
+    }
+  </script>
+  
+</html>

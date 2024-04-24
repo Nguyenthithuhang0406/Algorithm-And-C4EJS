@@ -1,0 +1,216 @@
+header{
+    display: inline;
+    margin-left: 250px;
+}
+.logo{
+    margin-right: 20px;
+}
+.THPT{
+    height: 30px;
+    width: 200px;
+    margin-left: 20px;
+    border-radius: 20px;
+    border-color: #ccc;
+}
+.chuthpt{
+    color: darkgray;
+    font-size: 13px;
+    margin-top: 5px;
+}
+.fanpage{
+    border-color: #ccc;
+    margin-left: 300px;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+}
+.page{
+    font-size: 13px;
+    color: deeppink;
+    margin-top: 0px;
+}
+.dbtt{
+    margin-bottom: -20px;
+}
+.search{
+    height: 30px;
+    width: 200px;
+    border-radius: 20px;
+    border-color: #ccc;
+    margin-top: -20px;
+  }
+  .box-search{
+margin-left: 1100px;
+margin-top: -20px;
+  
+}
+.anh1{
+    margin-left: -50px;
+    margin-bottom: -10px;
+}
+.trangchu{
+margin-top: -5px;
+}
+.tooglemenu{
+    background-color: deeppink;
+    height: 30px;
+    position: relative;
+}
+ul{
+    position: absolute;
+    margin-top: 5px;
+    list-style: none;
+    margin-left: 180px;
+}
+li{
+    display: block;
+    height: 30px;
+    float:left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+a{
+    text-decoration: none;
+}
+.menu2{
+    height: 30px;
+    position: relative;
+}
+.body1{
+    width: 1000px;
+    height: 510px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 570px 400px;
+    grid-template-rows: 150px 150px 150px;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+}
+.item1{
+    grid-row: 1 / span 3;
+}
+.item2, .item3, .item4{
+    display: grid;
+    grid-template-columns: 190px 190px;
+    grid-column-gap: 20px;
+}
+.left{
+    position: absolute;
+    margin-top: -510px;
+    margin-left: 20px;
+}
+.right{
+    position: absolute;
+    margin-top: -510px;
+    margin-left: 1300px;
+}
+.dongke2{
+    margin-left: 250px;
+    width: 1000px;
+}
+.baidacsac{
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: -30px;
+}
+.ke2{
+    margin-top: -8px;
+    margin-left: 170px;
+    color: #ccc;
+}
+.body2{
+    width: 670px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-column-gap: 35px;
+    margin: 0 250px;
+}
+.chu{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.body3{
+    width: 670px;
+    margin: 10px 250px;
+}
+.khoi{
+    display: grid;
+    grid-template-columns: 300px 335px;
+    grid-column-gap: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.tieude{
+    font-size: 18px;
+}
+.bt{
+    color: darkgray;
+}
+.muiten{
+    margin-bottom: -5px;
+}
+.tinnoibat{
+    width: 300px;
+    background-color: beige;
+    margin-left: 1000px;
+    margin-top: -1700px;
+}
+.khoinho{
+    display: grid;
+    grid-template-columns: 140px 140px;
+    grid-column-gap: 20px;
+    margin-bottom: 20px;
+}
+.bt1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} 
+.sukien{
+    background-image: url("https://cdn.eva.vn/upload/template_hot_event/2-2023/images/2023-04-202-2023/images/2023-04-20/box-bg-sknb-default-trang-trong-1681962151-2-width300height390.jpg");
+    width: 300px;
+    height: 390px;
+    margin-left: 1000px;
+    margin-top: 100px;
+    position: relative;
+} 
+ol{
+    position: absolute;
+    margin-top: 100px;
+}
+.sk{
+    margin-bottom: 20px;
+}
+.evatam2{
+    width: 300px;
+    margin-left: 1000px;
+    margin-top: 50px;
+}
+.tieude2{
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+}
+.muitenden{
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 270px;
+}
+.khoitam{
+    display: grid;
+    grid-template-columns: 100px 180px;
+    grid-column-gap: 20px;
+    margin-bottom: 30px;
+}
+.chutam{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+}
+.chan{
+    width: 1000px;
+    margin-left: 250px;
+    margin-top: 300px;
+    display: grid;
+    grid-template-columns: 310px 310px 310px;
+    grid-column-gap: 35px;
+}
+.diachi, .trachnhiem{
+    border-right: 0.5px solid darkgoldenrod;
+}

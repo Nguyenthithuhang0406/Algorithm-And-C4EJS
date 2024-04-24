@@ -1,0 +1,21 @@
+.tb{
+    width: 315px;
+    display:grid;
+    background-color: gray;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+}
+.item, .item1, .item2 {
+    background-color: green;
+    border: solid;
+}
+.item1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.item2{
+    grid-row: 2 / 4;
+    /* hoac la grid-row: 2 / span 2; */
+}

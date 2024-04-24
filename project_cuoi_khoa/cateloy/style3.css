@@ -1,0 +1,36 @@
+.body_truyen{
+    width: 60%;
+    margin-left: 20%;
+    padding: 50px;
+    border: 1px solid darkgray;
+    border-radius: 20px;
+}
+.anh_truyen{
+    width: 50%;
+    height: 400px;
+}
+.ten_truyen{
+    margin-top: -400px;
+    margin-left: 60%;
+    font-family: 'Courgette', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-size: 70px;
+    color: blue;
+}
+.thong_tin{
+    margin-top: 70px;
+    margin-left: 60%;
+    font-size: 20px;
+}
+.chon_chap{
+    margin-top: 40px;
+    margin-left: 60%;
+    background-color: firebrick;
+    color: chartreuse;
+
+}
+#chap1{
+    margin-top: 250px;
+    margin-left: 0px;
+    font-size: 30px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1> Nhập vào hai số a và b:</h1>
+   <input type="number" id="numberA" placeholder="Nhập số a">
+  <input type="number" id="numberB" placeholder="Nhập số b">
+  <button onclick="displayPerfectSquares()">Hiển thị số chính phương</button>
+  <p id="result"></p> 
+</body>
+
+ 
+  <script>
+    function displayPerfectSquares() {
+      var a = parseInt(document.getElementById("numberA").value);
+      var b = parseInt(document.getElementById("numberB").value);
+      var result = "";
+
+      if (!isNaN(a) && !isNaN(b) && a <= b) {
+        for (var i = a; i <= b; i++) {
+          if (Number.isInteger(Math.sqrt(i))) {
+            result += i + ", ";
+          }
+        }
+        result = result.slice(0, -2); 
+        document.getElementById("result").textContent = "Kết quả: Các số chính phương trong khoảng từ " + a + " đến " + b + " là: " + result;
+      } else {
+        document.getElementById("result").textContent = "Vui lòng nhập hai số hợp lệ và a không lớn hơn b.";
+      }
+    }
+  </script>
+
+
+  
+</html>
